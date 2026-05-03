@@ -3,17 +3,20 @@
     <a class='navbar-brand' href="/">AXIOS CRUD Operations</a>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
-        <li class="nav-item active">
-          <a class="nav-link" href="/employee-create">CREATE</a>
+        <li class="nav-item">
+          <router-link class="nav-link" to="/">HOME</router-link>
+        </li>
+        <li class="nav-item ">
+          <router-link class="nav-link" to="/employee-create">CREATE</router-link>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/employee-read">READ</a>
+          <router-link class="nav-link" to="/employee-read">READ</router-link>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/employee-update">UPDATE</a> 
+          <router-link class="nav-link" to="/employee-update">UPDATE</router-link>
         </li>
         <li class="nav-item">
-          <a class='nav-link' href="/employee-delete">DELETE</a>
+          <router-link class='nav-link' to="/employee-delete">DELETE</router-link>
         </li>
       </ul>
     </div> 
@@ -37,5 +40,9 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+}
+.navbar-nav .router-link-exact-active{
+  font-weight:bold;
+  color:rgb(223, 222, 222);
 }
 </style>

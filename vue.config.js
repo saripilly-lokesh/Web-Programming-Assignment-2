@@ -3,5 +3,5 @@ module.exports = defineConfig({
   transpileDependencies: true
 });
 module.exports = {
-  publicPath: process.env.NODE_ENV === 'production' ? '/employee-axios/' : '/'
+  publicPath: process.env.NODE_ENV === 'production' ? '/Web-Programming-Assignment-2/' : '/'
 }
